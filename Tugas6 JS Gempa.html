@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+	<title>Tugas OOP</title>
+
+	<script>
+		//Class gempa
+	function Gempa(lokasi, skala) {
+		this.lokasi = lokasi;
+		this.skala = skala;
+		this.dampak = dampak;
+			
+	function dampak() {
+	if (this.skala <= 2) {
+		return "Gempa Tidak Terasa";
+	} else if (this.skala <= 4) {
+		return "Bangunan Retak-retak";
+	} else if (this.skala <= 6) {
+		return "Bangunan Roboh";
+	} else {
+		return "Bangunan Roboh & Berpotensi Tsunami";
+	}
+	    };
+    }
+
+		// Buat 8 object (masing2 tipe gempa 2 object)
+	    let gempa1 = new Gempa("Bali", 2.0);
+		let gempa2 = new Gempa("Riau", 4.0);
+		let gempa3 = new Gempa("Papua", 6.0);
+		let gempa4 = new Gempa("NTT", 7.0);
+		let gempa5 = new Gempa("Sumatera", 1.5);
+		let gempa6 = new Gempa("Jawa", 3.5);
+		let gempa7 = new Gempa("Maluku", 4.5);
+		let gempa8 = new Gempa("Lampung", 6.5);
+
+		//menampilkan Informasi terkait gempa
+		function InformasiGempa() {
+			document.getElementById("lokasi1").innerHTML = gempa1.lokasi;
+			document.getElementById("skala1").innerHTML = gempa1.skala;
+			document.getElementById("dampak1").innerHTML = gempa1.dampak();
+
+			document.getElementById("lokasi2").innerHTML = gempa2.lokasi;
+			document.getElementById("skala2").innerHTML = gempa2.skala;
+			document.getElementById("dampak2").innerHTML = gempa2.dampak();
+			
+			document.getElementById("lokasi3").innerHTML = gempa3.lokasi;
+			document.getElementById("skala3").innerHTML = gempa3.skala;
+			document.getElementById("dampak3").innerHTML = gempa3.dampak();
+			
+			document.getElementById("lokasi4").innerHTML = gempa4.lokasi;
+			document.getElementById("skala4").innerHTML = gempa4.skala;
+			document.getElementById("dampak4").innerHTML = gempa4.dampak();
+			
+			document.getElementById("lokasi5").innerHTML = gempa5.lokasi;
+			document.getElementById("skala5").innerHTML = gempa5.skala;
+			document.getElementById("dampak5").innerHTML = gempa5.dampak();
+			
+			document.getElementById("lokasi6").innerHTML = gempa6.lokasi;
+			document.getElementById("skala6").innerHTML = gempa6.skala;
+			document.getElementById("dampak6").innerHTML = gempa6.dampak();
+			
+			document.getElementById("lokasi7").innerHTML = gempa7.lokasi;
+			document.getElementById("skala7").innerHTML = gempa7.skala;
+			document.getElementById("dampak7").innerHTML = gempa7.dampak();
+			
+			document.getElementById("lokasi8").innerHTML = gempa8.lokasi;
+			document.getElementById("skala8").innerHTML = gempa8.skala;
+			document.getElementById("dampak8").innerHTML = gempa8.dampak();
+		}
+	</script>
+</head>
+<body onload="InformasiGempa()">
+<style>
+    table, th, td {
+      border:2px solid #DC8449;
+      background-color: #FDD36A;
+    }
+    </style>
+    <body>
+    
+    <h2>Tabel Informasi Terkait Gempa</h2>
+    
+    <table style="width:100%">
+      <tr>
+        <th>Lokasi</th>
+        <th>Skala</th>
+        <th>Dampak</th>
+      </tr>
+      <tr>
+        <td id="lokasi1"></td>
+        <td id="skala1"></td>
+        <td id="dampak1"></td>
+      </tr>
+      <tr>
+        <td id="lokasi2"></td>
+        <td id="skala2"></td>
+        <td id="dampak2"></td>
+      </tr>
+      <tr>
+        <td id="lokasi3"></td>
+        <td id="skala3"></td>
+        <td id="dampak3"></td>
+      </tr>
+      <tr>
+        <td id="lokasi4"></td>
+        <td id="skala4"></td>
+        <td id="dampak4"></td>
+      </tr>
+      <tr>
+        <td id="lokasi5"></td>
+        <td id="skala5"></td>
+        <td id="dampak5"></td>
+      </tr>
+      <tr>
+        <td id="lokasi6"></td>
+        <td id="skala6"></td>
+        <td id="dampak6"></td>
+      </tr>
+      <tr>
+        <td id="lokasi7"></td>
+        <td id="skala7"></td>
+        <td id="dampak7"></td>
+      </tr>
+      <tr>
+        <td id="lokasi8"></td>
+        <td id="skala8"></td>
+        <td id="dampak8"></td>
+      </tr>
+      
+    </table>
+    
+</body>
+</html>
